@@ -53,11 +53,12 @@ button {
   height: 46px;
   width: 110px;
   background-color: orange;
+  color: white;
   border-color: #979797;
 }
 
 .orange-button:hover {
-  background-color: bisque;
+  background-color: #979797;
 }
 
 #logo {
@@ -67,16 +68,24 @@ button {
   margin-right: auto;
 }
 
+
 header {
+  display: flow-root;
   background-color: none;
-  text-align: center;
+  text-align: left;
   padding: 40px;
 }
+
+.text {
+  overflow: auto;
+}
+
 
 #image {
   width: 605;
   height: 496px;
-  margin-bottom: 20px;
+  margin-left: 20px;
+  float: right;
 
 }
 
@@ -91,21 +100,81 @@ p {
   color: #544837;
   font-size: 18px;
   margin-bottom: 30px;
+  margin: 20px;
 }
 
 .started {
   background-color: #FF9900;
+  border-color: #979797;
+  color: white;
   height: 63px;
   width: 173px;
-  border: none;
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 16px;
+  cursor: pointer;
+  transition: backgraund-color 0.3s;
+  margin: 20px;
+}
+
+.started:hover {
+  background-color: #979797;
 }
 
 a {
   text-decoration: none;
   color: #FF9900;
   font-size: 16px;
-  margin-left: 10px;
+  margin-left: 20px;
+}
+
+a:hover {
+  color: #979797;
+}
+
+.section1 {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#feature {
+  text-align: center;
+  padding: 20px;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+.feature-block {
+  display: inline-block;
+  text-align: left;
+  width: 240px;
+  height: 178px;
+  margin: 10px;
+}
+
+.icon {
+  width: 51px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.cta-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #FF9900;
+  color: white;
+  border: #979797;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #979797;
 }
