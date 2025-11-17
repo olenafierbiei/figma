@@ -105,3 +105,9 @@ h2 {
 #video:hover {
   color: #FF9900;
 }
+
+.feature-block {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
